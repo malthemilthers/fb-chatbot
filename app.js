@@ -178,7 +178,7 @@ function findMovie(userId, movieTitle) {
           }
         });
       } else {
-          console.log(movieObj.Error);
+          console.log('movieObj.Error is ' + movieObj.Error);
           sendMessage(userId, {text: movieObj.Error});
       }
     } else {
