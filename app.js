@@ -18,6 +18,11 @@ app.get("/", function (req, res) {
   res.send("Deployed!");
 });
 
+// Server index page
+app.get("/testmdb", function (req, res) {
+  res.json(Movie);
+});
+
 // Facebook Webhook
 // Used for verification
 app.get("/webhook", function (req, res) {
