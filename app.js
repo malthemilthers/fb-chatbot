@@ -130,6 +130,7 @@ function getMovieDetail(userId, field) {
 }
 
 function findMovie(userId, movieTitle) {
+  console.log('Lets try and find the movie: ' + movieTitle);
   request("http://www.omdbapi.com/?type=movie&amp;t=" + movieTitle, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       var movieObj = JSON.parse(body);
