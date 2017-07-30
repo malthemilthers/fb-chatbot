@@ -1,0 +1,12 @@
+{
+  "name": "fb-chatbot",
+  "version": "1.0.0",
+  "description": "A simple chat bot for FB Messenger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Malthe Milthers",
+  "license": "ISC"
+}
