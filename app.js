@@ -82,7 +82,7 @@ function processPostback(event) {
         name = bodyObj.first_name;
         greeting = "Hi " + name + ". ";
       }
-      var message = greeting + "Hi! I'm a robot build by Malthe. I can tell you various details regarding movies. What movie would you like to know about?";
+      var message = greeting + "Hi! I'm a robot that Malthe made. I can tell you various details regarding movies. What movie would you like to know about?";
       sendMessage(senderId, {text: message});
     });
   } else if (payload === "Correct") {
