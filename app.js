@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 
 // Server index page
 app.get("/testmdb", function (req, res) {
-  res.json(Movie);
+  console.log(Movie);
 });
 
 // Facebook Webhook
