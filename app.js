@@ -20,7 +20,9 @@ app.get("/", function (req, res) {
 
 // Server index page
 app.get("/testmdb", function (req, res) {
-  console.log(Movie);
+  console.log('db: ' + db);
+  console.log('Movie:' + Movie);
+  res.send("Mongo tested!");
 });
 
 // Facebook Webhook
