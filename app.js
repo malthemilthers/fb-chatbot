@@ -20,8 +20,8 @@ app.get("/", function (req, res) {
 
 // Server index page
 app.get("/testmdb", function (req, res) {
-  console.log('db: ' + db);
-  console.log('Movie:' + Movie);
+  console.log(db);
+  console.log(Movie);
   res.send("Mongo tested!");
 });
 
