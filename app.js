@@ -86,9 +86,6 @@ function processPostback(event) {
   }
 }
 
-function sendCounter(senderId) {
-	 sendMessage(senderId, {text: 'Yo!'});
-}
 
 function processMessage(event) {
   // Make sure the message wasnt from our selves.
@@ -99,14 +96,17 @@ function processMessage(event) {
 
     // Set a timer that posts numbers 3 seconds in a row.
     setTimeout(function(){
-      sendCounter(senderId);
+      sendMessage(senderId, {text: '10'});
     }, 1000); // After 1 second
     setTimeout(function(){
-      sendCounter(senderId);
+      sendMessage(senderId, {text: '9'});
     }, 2000); // After 2 second
     setTimeout(function(){
-      sendCounter(senderId);
+      sendMessage(senderId, {text: '8'});
     }, 3000); // After 3 second
+    setTimeout(function(){
+      sendMessage(senderId, {text: '7'});
+    }, 4000); // After 3 second
 
     console.log("Received message from senderId: " + senderId);
     console.log("Message is: " + JSON.stringify(message));
